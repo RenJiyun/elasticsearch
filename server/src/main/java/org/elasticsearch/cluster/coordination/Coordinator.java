@@ -104,6 +104,9 @@ import static org.elasticsearch.gateway.ClusterStateUpdaters.hideStateIfNotRecov
 import static org.elasticsearch.gateway.GatewayService.STATE_NOT_RECOVERED_BLOCK;
 import static org.elasticsearch.monitor.StatusInfo.Status.UNHEALTHY;
 
+/**
+ * 实现 Zen 协议
+ */
 public class Coordinator extends AbstractLifecycleComponent implements ClusterStatePublisher {
 
     private static final Logger logger = LogManager.getLogger(Coordinator.class);
